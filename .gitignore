@@ -1,0 +1,23 @@
+# Build files
+/build/
+*.exe
+*.obj
+*.o
+*.pdb
+
+# OS files
+Thumbs.db
+*.log
+*.tmp
+.DS_Store
+
+# IDE files
+.vscode/
+*.suo
+*.user
+*.vcxproj.user
+
+# Editor backups
+*.bak
+*.swp
+*~
