@@ -1,0 +1,4 @@
+seed x = 10
+seed y = x
+x = x+1
+bloom "First Program!"

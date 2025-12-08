@@ -28,10 +28,10 @@ void Lexer::skipWhitespace(){
 }
 
 //Extracts Identifier or keyword
-Token Lexer::identfierOrKeyword(){
+Token Lexer::identifierOrKeyword(){
     string result;
 
-    while(isalnum(currentChar() || currentChar()=='_')){
+    while(isalnum(currentChar()) || currentChar()=='_'){
         result += currentChar();
         advance();
     }
@@ -79,7 +79,7 @@ vector<Token> Lexer::tokenize(){
             skipWhitespace();
         }
         else if(isalpha(currentChar()) || currentChar()=='_'){
-            tokens.push_back(identfierOrKeyword());
+            tokens.push_back(identifierOrKeyword());
         }
         else if(isdigit(currentChar())){
             tokens.push_back(number());

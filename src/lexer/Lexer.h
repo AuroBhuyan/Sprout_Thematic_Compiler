@@ -11,11 +11,11 @@ class Lexer{
         char currentChar();
         void advance();
         void skipWhitespace();
-        Token identfierOrKeyword();
+        Token identifierOrKeyword();
         Token number();
         Token stringLiteral();
 
     public:
         Lexer(const string& src);
         vector<Token> tokenize();
-}
+};
