@@ -21,6 +21,7 @@ struct Token
 
     Token(TokenType typ, const string &val)
     {
+        // Can add location later
         type = typ;
         value = val;
     }
